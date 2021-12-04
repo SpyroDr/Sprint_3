@@ -56,7 +56,7 @@ public class LoginCourierNegativeTests {
 
     }
 
-    @Test
+    /*@Test
     @Story("Авторизация курьера")
     @DisplayName("Авторизация курьера без пароля. Негативный сценарий")
     @Description("Авторизовать курьера без пароля")
@@ -71,7 +71,7 @@ public class LoginCourierNegativeTests {
         // Assert
         assertEquals("Статус не 400 conflict!",400, statusCodeNegativeResponse.extract().statusCode());
 
-    }
+    }*/
 
 }
 
