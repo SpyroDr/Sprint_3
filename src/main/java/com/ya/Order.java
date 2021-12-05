@@ -1,3 +1,4 @@
+
 package com.ya;
 
 import com.github.javafaker.Faker;
