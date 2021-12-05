@@ -1,3 +1,4 @@
+
 package com.ya;
 
 import io.qameta.allure.Description;
@@ -26,14 +27,14 @@ public class GetOrderListTest {
     @Description("Создать заказ и получить список заказов")
 
     public void getOrdersList() {
-        //Arrange
+        // Arrange
         Order order = Order.Randomize();
 
-        //Act
+        // Act
         orderClient.create(order);
         response = orderClient.getList(limit);
 
-        //Assert
+        // Assert
         response.assertThat().statusCode(200);
         response.assertThat().body("data.orders", not(emptyArray()));
     }
